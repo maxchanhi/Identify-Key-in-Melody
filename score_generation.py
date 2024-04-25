@@ -78,8 +78,8 @@ def lilypond_generation(melody, name, uppertime, lowertime):
     subprocess.run(['lilypond', '--png', '-dresolution=300', 'score.ly'], check=False)
 
     # Generate MP3 file
-    # subprocess.run(['fluidsynth', '-ni', 'GeneralUser/GeneralUserGSv1.471.sf2', 'score.midi', '-F', f'static/{name}.mp3', '-r', '44100'],
-               # check=True)
+    subprocess.run(['fluidsynth', '-ni', 'GeneralUser/GeneralUserGSv1.471.sf2', 'score.midi', '-F', f'static/{name}.mp3', '-r', '44100'],
+               check=True)
 
     with Image.open('score.png') as img:
         width, height = img.size
