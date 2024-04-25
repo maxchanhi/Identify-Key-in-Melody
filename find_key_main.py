@@ -6,7 +6,7 @@ from motif import generate_options,main_generation
 from streamlit_extras.let_it_rain import rain
 st.set_page_config(page_title="Identify Key in Melody")
 
-st.title("Identify Key in Melody")
+st.title("Identify the Key in a Melody")
 
 difficulty = st.selectbox("Select Difficulty", ["Easy Mode (2 sharps to 2 flats)", 
                                                  "Intermediate Mode (5 sharps to 5 flats)",
