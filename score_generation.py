@@ -79,7 +79,7 @@ def lilypond_generation(melody, name, uppertime, lowertime):
                    check=True)
 
     # Generate MP3 file
-    # subprocess.run(['fluidsynth', '-ni', '/Users/chakhangchan/Documents/VS_code/Music_theory_app/melody_key/GeneralUser/GeneralUserGSv1.471.sf2', 'score.midi', '-F', f'static/{name}.mp3', '-r', '44100'],
+    # subprocess.run(['fluidsynth', '-ni', 'GeneralUser/GeneralUserGSv1.471.sf2', 'score.midi', '-F', f'static/{name}.mp3', '-r', '44100'],
                # check=True)
 
     with Image.open('score.png') as img:
