@@ -37,7 +37,7 @@ def plain_melody(melody):
 def lilypond_generation(melody, name, uppertime, lowertime):
     melody = plain_melody(melody)
     lilypond_score = f"""
-\\version "2.24.1"  
+\\version "2.22.0"  
 \\header {{
   tagline = "" \\language "english"
 }}
