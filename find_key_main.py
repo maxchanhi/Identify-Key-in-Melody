@@ -55,7 +55,7 @@ if st.session_state['options']:
     st.write("What key is the score in?")
     option_list = st.session_state['options']
     st.image("static/cropped_score_testing.png", use_column_width=True)
-    user_answer = st.radio("Select the key:", options= option_list,index=None )
+    user_answer = st.radio("Select the key:", options= option_list,index=False )
     st.session_state['user_answer'] = user_answer
 
     ans_key = st.session_state['ans_key']
