@@ -75,7 +75,7 @@ def lilypond_generation(melody, name, uppertime, lowertime):
         f.write(lilypond_score)
 
     # Generate PNG image and MIDI file
-    subprocess.run(['lilypond', '--png', '-dresolution=300', 'scorew.ly'], check=False)
+    subprocess.run(['lilypond', '--png', '-dresolution=300', 'score.ly'], check=False)
 
     # Generate MP3 file
     # subprocess.run(['fluidsynth', '-ni', 'GeneralUser/GeneralUserGSv1.471.sf2', 'score.midi', '-F', f'static/{name}.mp3', '-r', '44100'],
