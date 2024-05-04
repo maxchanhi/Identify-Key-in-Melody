@@ -5,6 +5,9 @@ intermediate = ["C major","A minor" , "G major","E minor", "D major","B minor", 
                    "E major","C-sharp minor","B major","G-sharp minor",
                    "F major","D minor","B-flat major","G minor", "E-flat major", "C minor",
                    "A-flat major","F minor", "D-flat major","B-flat minor"]
+hard = ['E major', 'C-sharp minor', 'B major', 'G-sharp minor', 'F-sharp major',
+        'D-sharp minor', 'G-flat major', 'E-flat minor', 'D-flat major', 
+        'B-flat minor', 'A-flat major', 'F minor']
 fun_emoji_list = [
     "😂",  "🎉",   "🚀",  "🐱", 
     "🐶",  "🦄",  
