@@ -8,9 +8,9 @@ st.set_page_config(page_title="Identify Key in Melody")
 
 st.title("Identify the Key in a Melody")
 
-difficulty = st.selectbox("Select Difficulty", ["Easy Mode (2 sharps to 2 flats)", 
-                                                 "Intermediate Mode (5 sharps to 5 flats)",
-                                                 "Advanced Mode (All sharps and flats)",
+difficulty = st.selectbox("Select Difficulty", ["Easy Mode", 
+                                                 "Intermediate Mode",
+                                                 "Advanced Mode",
                                                  "Custom Mode"])
 
 # Filter the keyscale dictionary based on the selected difficulty
