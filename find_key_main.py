@@ -1,5 +1,5 @@
 import streamlit as st
-from notation import keyscale,easymode,intermediate,fun_emoji_list
+from notation import keyscale,easymode,intermediate,fun_emoji_list,hard
 import random
 from score_generation import lilypond_generation
 from motif import generate_options,main_generation
@@ -27,8 +27,10 @@ elif difficulty == "Intermediate Mode (5 sharps to 5 flats)":
         if key in intermediate:
             filtered_keyscale[key] = scale
 elif difficulty == "Advanced Mode (All sharps and flats)":
-    filtered_keyscale = keyscale
     disable_select = True 
+    for key, scale in keyscale.items():
+        if key in hard:
+            filtered_keyscale[key] = scale
 else:
     filtered_keyscale = keyscale
     disable_select = False
